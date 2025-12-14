@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bookstore Checkout Form - With Personal details</title>
+</head>
+<form action= "ex7php.php" method="post">
+<body bgcolor="lightyellow"> 
+<h1>Bookstore Checkout Form</h1>
+<p><strong>Please fill in your details to complete your order.</strong></p><hr>
+<h3>1. Contact & Login Details</h3>
+<p><label><strong>Full Name:</strong></label>
+<input type="text"placeholder="Enter full name" name="name">
+<br><br>   
+<label><strong>Email Address:</strong></label>
+<input type="email"placeholder="your@email.com" name="mail">
+<br><br>
+<label><strong>New Password:</strong></label>
+<input type="password" placeholder="Enter the password" name="pw">
+<br><br>
+<label><strong>Phone Number:</strong></label>
+<input type="tel" placeholder="Enter a valid phone number" name="phone"></p>
+<hr>
+<h3>2. Shipping Address</h3>
+<p><label><strong>Address Line 1:</strong></label>
+<input type="text" placeholder="Street address or P.O. Box" name="add">
+<br><br>
+<label><strong>City:</strong></label>
+<input type="text" placeholder="City" name="city">
+<label><strong>Zip/Postal Code:</strong></label>
+<input type="text" placeholder="000000" name="zip">
+<br><br>
+<label><strong>Country:</strong></label>
+<input type="text" placeholder="e.g., India" name="country"></p>
+<hr>
+<h3>3. Order Preferences</h3>
+<ul>
+<li>
+<strong>Delivery Speed:</strong>
+<br>
+<label>
+<input type="radio" value="standard" name="speed"> Standard (5-7 days)
+</label>
+<br>
+<label>
+<input type="radio" value="express" name="speed"> Express (1-2 days)
+</label>
+</li>
+<br>
+<li>
+<strong>Gift Wrap Options:</strong>
+<br>
+<label>
+<input type="checkbox" value="yes" name="gift"> Yes, gift wrap this order.
+</label>
+</li>
+<br>
+<li>
+<label><strong>Special Instructions:</strong> (Delivery Notes)</label>
+<input type="text" placeholder="E.g., Leave package with neighbour." name="ins">
+</li>
+</ul>   
+<hr>
+<h3>4. Complete Order</h3>
+<p>
+<small>By clicking "Place Order," you agree to the terms and conditions.</small>
+</p>
+<button type="submit" name="submit">Place Order & Proceed to Payment</button>
+<button type="reset" name="clear">Clear All Fields</button>
+</form>
+</body>
+</html>
